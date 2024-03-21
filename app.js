@@ -8,6 +8,8 @@ app.get("/health", (req, res) => {
   res.send("healthy");
 });
 
+app.get("/me", (req, res) => res.send("My name is " + "Thierry Ntirandekura"));
+
 app.listen(3000, () => {
   console.log("App listening on port 3000!");
 });
